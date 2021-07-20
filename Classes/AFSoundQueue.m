@@ -73,7 +73,7 @@
             
             [_feedbackTimer pauseTimer];
             
-            [self playNextItem];
+//            [self playNextItem];
         }
     } repeats:YES];
 }
@@ -171,7 +171,7 @@
             
 //            [_feedbackTimer resumeTimer];
         }
-
+        _queuePlayer = nil;
         _queuePlayer = [[AFSoundPlayback alloc] initWithItem:item];
         [_queuePlayer play];
         [[MPRemoteCommandCenter sharedCommandCenter] playCommand];

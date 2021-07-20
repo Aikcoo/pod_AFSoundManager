@@ -42,7 +42,7 @@ NSString * const AFSoundPlaybackFinishedNotification = @"kAFSoundPlaybackFinishe
 -(void)setUpItem:(AFSoundItem *)item {
     
     _player = [[AVPlayer alloc] initWithURL:item.URL];
-    [_player play];
+//    [_player play];
     _player.actionAtItemEnd = AVPlayerActionAtItemEndPause;
     
     _status = AFSoundStatusPlaying;

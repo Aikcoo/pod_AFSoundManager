@@ -13,7 +13,9 @@
 -(id)initWithFilePath:(NSString *)filePath;
 
 -(void)startRecording;
+-(void)pauseRecording;
 -(void)saveRecording;
 -(void)cancelCurrentRecording;
+- (void)resumeRecording;
 
 @end
